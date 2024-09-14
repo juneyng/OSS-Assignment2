@@ -1,0 +1,474 @@
+body{
+    background-color: #f8f9fa;
+    font-family: system-ui,-apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"
+}
+.background{
+    width:100%;
+    margin:0;
+}
+.container{
+    width:49.2%;
+    margin:auto;
+    padding: 0 12px;
+}
+.logoimg{
+    margin: 0 0 17px 0;
+}
+
+.upper-body{
+    padding: 48px 0 48px 0;
+    text-align: center;
+    
+}
+
+.upper-body h2{
+    color: #212529;
+    font-size: 32px;
+    font-weight: 500;
+    margin: 0 0 6px 0;
+}
+.lead{
+    font-size:20px;
+    margin-top:0px;
+    font-weight: 300;
+    line-height: 30px;
+}
+
+.main-body{
+    width:105.1%;
+}
+.main-body {
+    display: flex; /* Flexbox로 자식 요소 배치 */
+    justify-content: space-between; /* 양쪽에 공간 균등 분배 */
+    align-items: flex-start;
+}
+
+.left-main {
+    width: 66.7%; /* 왼쪽 영역을 70%로 설정 */
+    box-sizing: border-box; /* 패딩을 포함한 너비 계산 */
+    order: 1; /* 왼쪽 영역의 순서 지정 */
+    padding-right: 32px;
+}
+
+.right-main {
+    width: 33.3%; /* 오른쪽 영역을 30%로 설정 */
+    box-sizing: border-box; /* 패딩을 포함한 너비 계산 */
+    order: 2; /* 오른쪽 영역의 순서 지정 */
+    padding: 0 48px 0 0px;
+}
+
+.left-main h4{
+    font-size:24px;
+    font-weight: 400;
+    margin:-6px 0 16px 0;
+}
+
+.your-cart{
+    margin : -5px 0 16px;
+}
+.primary{
+    font-size: 24px;
+    font-weight: 500;
+    color:#0d6efd;
+}
+.round{
+    font-size: 18px;
+    font-weight: 700;
+    color:white;
+    background-color: #0d6efd;
+    padding:3px 11.7px;
+    border-radius: 800px;
+    float:right;
+}
+
+.product-ul {
+    list-style: none; /* 기본 리스트 스타일 제거 */
+    padding: 0;
+    margin: 0;
+}
+
+/* 개별 리스트 항목 스타일 */
+.product-list {
+    display: flex;
+    justify-content: space-between; /* 좌우로 정렬 */
+    align-items: center; /* 수직 중앙 정렬 */
+    padding: 6px 16px; /* 항목 내부 여백 */
+    border: 1px solid #e0e0e0; /* 회색 경계선 */
+    background-color: #fff; /* 배경색 */
+    border-top: none; /* 윗쪽 경계선만 없애기 */
+}
+.product-list:nth-child(4) {
+    background-color: #f8f9fa; /* 예시: 배경색 변경 */
+}
+.product-list-upper{
+    display: flex;
+    justify-content: space-between; /* 좌우로 정렬 */
+    align-items: center; /* 수직 중앙 정렬 */
+    padding: 6px 16px; /* 항목 내부 여백 */
+    border: 1px solid #e0e0e0; /* 회색 경계선 */
+    border-radius: 6px 6px 0 0; /* 둥근 모서리 */
+    background-color: #fff; /* 배경색 */
+}
+.product-list-under{
+    display: flex;
+    justify-content: space-between; /* 좌우로 정렬 */
+    align-items: center; /* 수직 중앙 정렬 */
+    padding: 6px 16px; /* 항목 내부 여백 */
+    border: 1px solid #e0e0e0; /* 회색 경계선 */
+    border-radius: 0 0 6px 6px; /* 둥근 모서리 */
+    background-color: #fff; /* 배경색 */
+    border-top: none; /* 윗쪽 경계선만 없애기 */
+    height:28px;
+}
+
+/* 제품명 스타일 */
+.right-main h6 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+    color: #212529;
+}
+
+/* 설명 텍스트 스타일 */
+.right-main small {
+    color: #6c757d; /* 설명 텍스트 색상 */
+    font-size: 14px;
+}
+
+/* 금액 텍스트 스타일 */
+
+.text-muted1{
+    color:#6c757d;
+}
+.text-muted2{
+    color:#6c757d;
+    padding: 0 0 20px 0;
+}
+
+/* 프로모션 코드 항목에 적용되는 스타일 */
+.product-list .text-success {
+    color: #198754;
+    padding: 0 0 5px 0;
+}
+.text-success small,.text-success h6{
+    color: #198754;
+}
+
+/* 총합 금액 항목 스타일 */
+.product-list strong {
+    font-size: 18px;
+    color: #212529;
+}
+
+/* 마지막 총합 금액 스타일 */
+.product-list:last-child strong {
+    color: #000; /* 검은색 금액 */
+}
+
+.redeem-bg{
+    height:38px;
+    display: flex;
+    justify-content: space-between; /* 좌우로 정렬 */
+    align-items: center; /* 수직 중앙 정렬 */
+    padding: 8px; /* 항목 내부 여백 */
+    border: 1px solid #e0e0e0; /* 회색 경계선 */
+    background-color: #fff; /* 배경색 */
+    border-radius: 6px;
+    margin-top:18px;
+}
+.input-group {
+    display: flex; /* input과 button을 가로로 정렬 */
+    align-items: center; /* 세로로 가운데 정렬 */
+}
+   
+.redeem-input {
+    width:58.2%;
+    font-size:16px;
+    border-top-left-radius: 6px;
+    border-end-start-radius: 6px;
+    border: 1px solid #ced4da; /* 기본 테두리 설정 */
+    padding: 9px 12px;
+    outline: none;
+}
+
+.redeem-submit {
+    width:32%;
+    font-size:16px;
+    border-top-right-radius: 6px;
+    border-end-end-radius: 6px;
+    border: 1px solid #6c757d; /* 버튼의 테두리 */
+    background-color: #6c757d; /* 버튼 배경색 */
+    color: white; /* 버튼 텍스트 색 */
+    padding: 9px 12px; /* 버튼 내부 여백 */
+    cursor: pointer; /* 마우스 포인터 변경 */
+    transition: background-color 0.3s ease;
+}
+.redeem-submit:hover {
+    background-color: #5a6268; /* 톤 다운된 색상 */
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+/* 각각의 컬럼 설정 */
+.div1, .div2{
+    flex: 1 1 45%; /* 45%씩 차지하고, 줄어들 수 있음 */
+    margin-bottom: 16px;
+}
+
+.div3, .div4, .div5, .div6 {
+    flex: 1 1 100%; 
+    margin-bottom: 16px;
+}
+
+.div7{
+    flex: 1 1 41.7%;
+}
+.div8{
+    flex: 1 1 33.3%;
+}
+.div9 {
+    flex: 1 1 25%;
+}
+.input-group-text{
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    background-color: #e9ecef;
+    border: 1px solid rgb(204,204,204);
+    border-right: none;
+    margin-top: 10px;
+    height: 36px;
+    width:40.7px;
+    display: flex; /* Flexbox 레이아웃 활성화 */
+    justify-content: center; /* 수평 가운데 정렬 */
+    align-items: center; /* 수직 가운데 정렬 */
+    text-align: center; /* 텍스트 자체의 수평 정렬 */
+}
+.div1 .form-control, .div2 .form-control{
+    width: 86.5%;
+    height: 24px;
+    padding: 6px 12px;
+    margin-top: 9px;
+    border: 1px solid rgb(204,204,204);
+    border-radius: 6px;
+    font-size: 16px;
+}
+.div3 .form-control{
+    width: 86.7%;
+    height: 24px;
+    padding: 6px 12px;
+    margin-top: 10px;
+    border: 1px solid rgb(204,204,204);
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    font-size: 16px;
+    font-family: system-ui,-apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"
+    
+}
+
+.div4 .form-control,.div5 .form-control,.div6 .form-control{
+    width: 93.2%;
+    height: 24px;
+    padding: 6px 12px;
+    margin-top: 10px;
+    border: 1px solid rgb(204,204,204);
+    border-radius: 6px;
+    font-size: 16px;
+    font-family: system-ui,-apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"
+}
+.div6 .form-control{
+    width: 93.2%;
+    height: 72px;
+    padding: 6px 12px;
+    margin-top: 10px;
+    border: 1px solid rgb(204,204,204);
+    border-radius: 6px;
+    font-size: 16px;
+    font-family: system-ui,-apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"
+}
+.div7 .form-select {
+    width: 93.75%;
+    height: 38px;
+    padding: 6px 66px 6px 12px;
+    margin-top: 8px;
+    border: 1px solid rgb(204,204,204);
+    border-radius: 6px;
+    font-size: 16px;
+    font-family: system-ui,-apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"
+}
+.div8 .form-select{
+    width: 90%;
+    height: 38px;
+    padding: 6px 12px;
+    margin-top: 8px;
+    border: 1px solid rgb(204,204,204);
+    border-radius: 6px;
+    font-size: 16px;
+    font-family: system-ui,-apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.div9 .form-control{
+    width: 57.7%;
+    height: 24px;
+    padding: 6px 36px 6px 12px;
+    margin-top: 8px;
+    border: 1px solid rgb(204,204,204);
+    border-radius: 6px;
+    font-size: 16px;
+    font-family: system-ui,-apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.text-muted{
+    color:#6c757d;
+}
+.input-group-has-validation{
+    display: flex;
+}
+.main-hr{
+    margin:24px 0px;
+}
+
+#payment{
+    margin : 0 0 16px;
+}
+.form-check{
+    margin-bottom: 4px;
+}
+input[type="radio"] {
+    display: none;
+}
+/* 커스텀 라디오 버튼 스타일 */
+input[type="radio"] + label:before {
+    content: '';
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    margin-right: 8px;
+    border-radius: 50%;
+    border: 1px solid rgb(204,204,204); /* 테두리 색상 */
+    background-color: #fff; /* 배경색 */
+    vertical-align: middle;
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* 라디오 버튼이 체크되었을 때 */
+input[type="radio"]:checked + label:before {
+    background-color: #fff; /* 체크된 배경색 */
+    box-shadow: inset 0 0 0 4px #007bff; /* 안쪽에 하얀색 원 */
+}
+.card-row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.div10, .div11{
+    flex: 1 1 45%; /* 45%씩 차지하고, 줄어들 수 있음 */
+    margin-top: 16px;
+}
+.div10 .form-control, .div11 .form-control{
+    width: 86.5%;
+    height: 24px;
+    padding: 6px 12px;
+    margin-top: 9px;
+    border: 1px solid rgb(204,204,204);
+    border-radius: 6px;
+    font-size: 16px;
+}
+.div12{
+    flex: 1 1 8%;
+    margin-top: 16px;
+    margin-right:32px;
+}
+.div13{
+    flex: 1 1 8%; 
+    margin-top: 16px;
+}
+.blank-div{
+    flex: 1 1 42%; 
+    margin-top: 16px;
+}
+.div12 .form-control, .div13 .form-control{
+    width: 86.5%;
+    height: 24px;
+    padding: 6px 12px;
+    margin-top: 9px;
+    border: 1px solid rgb(204,204,204);
+    border-radius: 6px;
+    font-size: 16px;
+}
+.continue-button{
+    width:100%;
+    padding: 8px 16px;
+    height:48px;
+    font-size:20px;
+    font-family: system-ui,-apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    border:none;
+    background-color: #0d6efd;
+    color:white;
+    border-radius: 8px;
+    cursor: pointer; /* 마우스 포인터 변경 */
+    transition: background-color 0.3s ease;
+}
+
+.continue-button:hover{
+    background-color: #0a58ca; /* 톤 다운된 파란색 */
+}
+
+.footer-main{
+    width:100%;
+    height:52px;
+    text-align: center;
+    margin: 48px 0;
+    padding: 48px 0 0;
+}
+
+.footer-main p{
+    margin: 0 0 7px 0;
+}
+
+.footer-main ul{
+    display: flex; /* Flexbox로 수평 정렬 */
+    justify-content: center;
+    list-style-type: none; /* 리스트 스타일 제거 (점, 숫자 등) */
+    padding: 0;
+    margin: 0;
+    color:#0d6efd;
+}
+
+.footer-main li{
+    margin-right: 14px; /* li 간의 간격 조정 */
+}
+.footer-main li:last-child{
+    margin-right: 0; /* li 간의 간격 조정 */
+}
+
+footer a:visited {
+    color: #0d6efd; /* 클릭 후에도 동일한 색상을 유지 */
+  }
+
+  .invalid-feedback {
+    display: none; /* 항상 아래쪽에 표시되도록 설정 */
+    margin-top: 5px; /* form-control과의 간격 추가 */
+    font-size: 14px;
+    color: #dc3545; /* 에러 메시지 색상 */
+}
+
+
+@media (max-width: 768px) {
+    .main-body {
+        display: block; /* 위아래 배치로 변경 */
+    }
+
+    .right-main {
+        order: -1; /* right-main을 위로 배치 */
+        width:100%;
+    }
+
+    .left-main {
+        order: 1; /* left-main을 아래로 배치 */
+        width:100%;
+    }
+}

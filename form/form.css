@@ -1,0 +1,67 @@
+/* 전체 컨테이너 스타일 */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    box-sizing: border-box;
+    width:60%;
+    border:1px solid black;
+    border-radius: 12px;
+    margin:auto;
+    margin-bottom:300px;
+    text-align: center;
+    background-color: #f8f9fa;
+  }
+  
+  .header {
+    text-align: center;
+  }
+  
+  /* input과 버튼 컨테이너 */
+  .input-submit {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 수평 중앙 정렬 */
+    gap: 20px; /* 요소 사이 간격 */
+    margin-bottom: 30px; /* 하단 공간 추가 */
+  }
+  
+  /* input 스타일 */
+  #input_append {
+    width: 400px;
+    padding: 10px;
+    text-align: center; /* 텍스트 중앙 정렬 */
+    font-size: 16px;
+    border-radius: 6px;
+  }
+  
+  /* 버튼 스타일 */
+  button {
+    border:none;
+    padding: 10px 4px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 120px; /* 버튼의 너비 */
+    transition: background-color 0.3s ease;
+  }
+  button:hover{
+    background-color: grey;
+  }
+  
+  /* div_append 안의 ul 리스트 */
+  #div_append {
+    width: 400px; 
+    margin:auto;
+    text-align: center;
+  }
+  
+  ul {
+    padding: 0;
+  }
+  
+  li {
+    margin: 5px 0;
+    font-size: 18px;
+  }
+  
