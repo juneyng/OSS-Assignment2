@@ -1,3 +1,4 @@
+//DOM이 완전히 로드 된 후 실행함. HTML요소가 모두 로드된 뒤
 document.addEventListener('DOMContentLoaded', function () {
     const checkoutButton = document.querySelector('.continue-button');
     
